@@ -75,9 +75,9 @@ font-size: 16px;
 .Studio{
     color: var(--main-color);
 }
-.text-footer {
+.footer_text {
     color: #F4F4FD;
-    margin-right: 1020px;
+    padding-right: 1020px;
 }
 /* ==============/Component================ */
 
