@@ -145,9 +145,3 @@ font-size: 16px;
     /* SLATE */
     color:var(--accent-color);
 }
-/* ================/Hero==================== */
-
-/* ==============Footer===================== */
-.logo-footer{
-    background: #2E2F42;
-}
