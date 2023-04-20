@@ -61,14 +61,14 @@ background-color: #FFFFFF;
 .contact-mail:focus,
 .phone-number:hover,
 .phone-number:focus {
-  color: var(--background-color);
+  color: var(--second-color);
 }
 .phone-number {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: var(--letter-spacing);
   /* SLATE */
-  color:var(--accent-color);
+  color:var(--second-color);
 }
 
 .text-footer {
