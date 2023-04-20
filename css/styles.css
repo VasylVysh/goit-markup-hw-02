@@ -55,7 +55,6 @@ background-color: #FFFFFF;
   line-height: 1.5;
   letter-spacing: var(--letter-spacing);
   /* SLATE */
-  color: var(--accent-color);
 }
 .contact-mail:hover,
 .contact-mail:focus,
@@ -68,7 +67,6 @@ background-color: #FFFFFF;
   line-height: 1.5;
   letter-spacing: var(--letter-spacing);
   /* SLATE */
-  color:var(--accent-color);
 }
 
 .text-footer {
@@ -150,7 +148,6 @@ background-color: #FFFFFF;
   line-height: 1.5;
   letter-spacing: var(--letter-spacing);
   /* SLATE */
-  color:var(--accent-color);
 }
 /* ================/Hero==================== */
 
