@@ -68,7 +68,7 @@ background-color: #FFFFFF;
   line-height: 1.5;
   letter-spacing: var(--letter-spacing);
   /* SLATE */
-  color:var(--second-color);
+  color:var(--accent-color);
 }
 
 .text-footer {
