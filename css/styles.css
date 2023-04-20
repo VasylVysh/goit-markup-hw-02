@@ -2,6 +2,7 @@
   --accent-color: #434455;
   --primary-text-color: #2E2F42;
   --background-color: #4D5AE5;
+  --second-color: #404bbf;
   --letter-spacing: 0.02em;
 }
 
@@ -47,7 +48,7 @@ background-color: #FFFFFF;
 .menu-link:hover,
 .menu-link:focus
 {
-  color: var(--accent-color);
+  color: var(--second-color);
 }
 .contact-mail {
   font-size: 16px;
