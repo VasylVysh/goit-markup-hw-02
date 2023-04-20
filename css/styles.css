@@ -1,175 +1,153 @@
-:root {
-  --primary-text-color: #757575;
-  --primary-bg-color: #ffffff;
-  --secondary-bg-color: #f5f4fa;
-  --footer-hero-bg-color: #2f303a;
-  --titel-link-color: #212121;
-  --secondary-link-color: #757575;
-  --accent-color: #2196f3;
-  --logo-up-color: #000000;
-  --logo-down-color: #ffffff;
-  --address-color: #ffffff;
-  --address-secondary-color: rgba(255, 255, 255, 0.6);
+:root{
+  --accent-color: #434455;
+  --primary-text-color: #2E2F42;
+  --background-color: #4D5AE5;
+  --letter-spacing: 0.02em;
 }
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primery-bg-color);
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-.titel {
-  color: var(--titel-link-color);
+body {
+font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+}
+
+/* ==============Components================ */
+.logo{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* NAVY BLUE */
+  color:var(--primary-text-color);
+  text-decoration: none;
+  
+}
+.accent {
+  /* IRIS */
+  color:var(--background-color);
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+  /* NAVY BLUE */
+  color:var(--primary-text-color);
+}  
+.menu-link:hover,
+.menu-link:focus
+{
+  color: var(--accent-color);
+}
+.contact-mail {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+  /* SLATE */
+  color: var(--accent-color);
+}
+.contact-mail:hover,
+.contact-mail:focus,
+.phone-number:hover,
+.phone-number:focus {
+  color: var(--background-color);
+}
+.phone-number {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+  /* SLATE */
+  color:var(--accent-color);
+}
+
+.text-footer {
+  color: #E7E9FC;
+  background: #2E2F42;
+}
+/* ==============/Components================ */
+
+
+
+
+/* ==================Hero=================== */
+.list-our-team{
+  background: #F4F4FD;
+}
+.hero{
+  background:var(--primary-text-color);
+}
+.modal-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background-color: #4D5AE5;
+  cursor: pointer;
+}
+.portfolio-btn{
+  color: var(--background-color);
+  background: #F4F4FD;
+  /* CORNFLOWER */
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
+  }
+.modal-btn:hover,
+.modal-btn:focus {
+  color: #FFFFFF;
+  background-color:var(--background-color);
+}
+.modal-btn:active{
+  color: #FFFFFF;
+  background-color: #404BBF;;
+}
+.hero-title{
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  /* text-align: center; */
+  letter-spacing: var(--letter-spacing);
+  color: #FFFFFF;
+}
+.title{
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-.hidden {
-  display: none;
-}
-/* .header {
-  border: 1px solid #ececec;
-} */
-/* Логотип */
-.logo {
-  color: var(--logo-up-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  width: 145px;
-  height: 31px;
-  /* margin-left: 215px;
-  margin-top: 24px; */
-}
-.footer > .logo {
-  color: var(--logo-down-color);
-}
-.logo-text {
-  color: var(--accent-color);
-}
-/* Навигация сайта */
-.nav > .list .link {
-  color: var(--titel-link-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.nav > .list .link:hover,
-.nav > .list .link:focus {
-  color: var(--accent-color);
-}
-.nav > .list .link.current {
-  color: var(--accent-color);
-}
-/* контакты */
-.contacts .link {
-  color: var(--secondary-link-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-color);
-}
-/* Блок герой */
-.hero {
-  background-color: var(--footer-hero-bg-color);
-  /* width: 1600px;
-  height: 600px; */
-}
-.hero-titel {
-  color: var(--primary-bg-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.button {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-}
-/* Блок Наши приимущества */
-.advantages .titel {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  text-align: start;
-}
-/* Блок Каманда */
-.team {
-  /* width: 1600px;
-  height: 648px; */
-  background-color: var(--secondary-bg-color);
-}
-.card {
-  width: 270px;
-  height: 368px;
-  background-color: var(--primary-bg-color);
-}
-.card > .titel {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-.card > .text {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-/* Футер */
-.footer {
-  background-color: var(--footer-hero-bg-color);
-}
-.address {
-  color: var(--address-color);
-  font-style: normal;
-}
-.address .link {
-  color: var(--address-secondary-color);
-}
-/* кнопки галереии */
-.galerry-button {
-  color: var(--titel-link-color);
-  background-color: var(--secondary-bg-color);
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-}
-.galerry-button:hover,
-.galerry-button:focus {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-}
-/* Карты галереи */
-.galerry-card {
+  line-height: 1.11;
+  /* text-align: center; */
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+  /* NAVY BLUE */
   color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.88;
 }
-.galerry-card .titel {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-align: start;
+.suptitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing);
+  /* NAVY BLUE */
+  color:var(--primary-text-color);
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+  /* SLATE */
+  color:var(--accent-color);
+}
+/* ================/Hero==================== */
+
+/* ==============Footer===================== */
+.logo-footer{
+  background: #2E2F42;
 }
