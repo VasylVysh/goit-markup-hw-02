@@ -111,7 +111,7 @@ background-color: #FFFFFF;
 .modal-btn:hover,
 .modal-btn:focus {
   color: #FFFFFF;
-  background-color: #404BBF;
+  background-color:var(--background-color);
 }
 .modal-btn:active{
   color: #FFFFFF;
